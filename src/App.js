@@ -14,8 +14,10 @@ function App() {
   (async () => {
     try {
       await appID.init({
-        clientId: process.env.REACT_APP_CLIENTID,
-        discoveryEndpoint: process.env.REACT_APP_ENDPOINT,
+        clientId:
+          process.env.REACT_APP_CLIENTID || window.env.REACT_APP_CLIENTID,
+        discoveryEndpoint:
+          process.env.REACT_APP_ENDPOINT || window.env.REACT_APP_ENDPOINT,
       });
     } catch (e) {
       setErrorState(true);
