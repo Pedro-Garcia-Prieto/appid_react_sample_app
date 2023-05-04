@@ -7,7 +7,7 @@ RUN npm install && npm run build
 
 FROM node:16-alpine
 
-RUN npm install -g serve
+RUN npm install -g serve@14.0.0
 
 COPY --from=builder /app/build /app
 
