@@ -36,8 +36,7 @@
   },
   "react-dotenv": {
     "whitelist": [
-      "REACT_APP_CLIENTID",
-      "REACT_APP_ENDPOINT"
+      "https://code-engine-toolchain-appid-test.11ql2qcx20p0.eu-de.codeengine.appdomain.cloud/"
     ]
   }
 }
