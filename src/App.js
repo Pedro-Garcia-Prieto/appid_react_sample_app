@@ -63,6 +63,8 @@ function App() {
         )}
         {errorState && <div style={{ color: "red" }}>{errorMessage}</div>}
       </header>
+      <p>CE_SUBDOMAIN:{process.env.CE_SUBDOMAIN}</p>
+      <p>clientId: {process.env.REACT_APP_CLIENTID}</p>
     </div>
   );
 }
